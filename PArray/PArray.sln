@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PArray", "PArray\PArray.csproj", "{3A4429C4-6C54-4A48-AA3B-1DD43A0471AF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3A4429C4-6C54-4A48-AA3B-1DD43A0471AF}.Debug|x86.ActiveCfg = Debug|x86
+		{3A4429C4-6C54-4A48-AA3B-1DD43A0471AF}.Debug|x86.Build.0 = Debug|x86
+		{3A4429C4-6C54-4A48-AA3B-1DD43A0471AF}.Release|x86.ActiveCfg = Release|x86
+		{3A4429C4-6C54-4A48-AA3B-1DD43A0471AF}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = PArray\PArray.csproj
+	EndGlobalSection
+EndGlobal
