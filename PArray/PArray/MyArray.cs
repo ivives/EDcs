@@ -54,18 +54,34 @@ namespace Serpis.Ed
 		}
 		
 		public static void SelectionSort(int[] v){
-			SelectionSortV2 (v);
+			SelectionSortV1 (v);
 		}
 		
-		public static void SelectionSortV1(int[] v){
+//		public static void SelectionSortV1(int[] v){
+			
+//			for (int selectedIndex = 0; selectedIndex < v.Length -1; selectedIndex++){
+//				int indexOfMin = selectedIndex;
+//				for (int index = selectedIndex +1; index < v.Length; index++)
+//					if (v[index].CompareTo(v[indexOfMin]) < 0)
+//						indexOfMin = index;
+	
+//				int temp = v[selectedIndex];
+//				v[selectedIndex] = v[indexOfMin];
+//				v[indexOfMin] = temp;
+//			}
+//		}
+	
+		
+// hacemos un metodo generico para la interfaz IComparable		
+		public static void SelectionSortV1<T>(T[] v) where T : IComparable<T>{
 			
 			for (int selectedIndex = 0; selectedIndex < v.Length -1; selectedIndex++){
 				int indexOfMin = selectedIndex;
 				for (int index = selectedIndex +1; index < v.Length; index++)
-					if (v[index] < v[indexOfMin])
+					if (v[index].CompareTo(v[indexOfMin]) < 0)
 						indexOfMin = index;
 	
-				int temp = v[selectedIndex];
+				T temp = v[selectedIndex];
 				v[selectedIndex] = v[indexOfMin];
 				v[indexOfMin] = temp;
 			}
